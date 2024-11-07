@@ -28,9 +28,11 @@ app.get('/', async (req, res) => {
   res.send(page.toString().trim());
 });
 
-const port = 3000;
+const port = 8080;
 app.listen(port, () => {
   console.log(`Server listening on port http://localhost:${port}`);
 });
+
+export default app;
 
 
